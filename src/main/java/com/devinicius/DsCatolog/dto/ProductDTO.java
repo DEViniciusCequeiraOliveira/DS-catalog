@@ -3,6 +3,7 @@ package com.devinicius.DsCatolog.dto;
 
 import com.devinicius.DsCatolog.entities.Category;
 import com.devinicius.DsCatolog.entities.Product;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -14,6 +15,7 @@ import java.util.Set;
 
 @Getter
 @Setter
+@EqualsAndHashCode
 public class ProductDTO {
 
     private Long id;
