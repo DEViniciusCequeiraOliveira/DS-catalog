@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 import java.time.Instant;
 
 @RestControllerAdvice
-
 public class ResourceExceptionHandler {
 
     @ExceptionHandler(EntityNotFoundExceptions.class)
@@ -44,6 +43,5 @@ public class ResourceExceptionHandler {
 
         return ResponseEntity.status(httpStatus).body(err);
     }
-
 
 }
