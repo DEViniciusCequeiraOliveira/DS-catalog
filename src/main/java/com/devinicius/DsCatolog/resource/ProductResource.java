@@ -52,4 +52,5 @@ public class ProductResource {
         productService.deleteOne(id);
         return ResponseEntity.noContent().build();
     }
+
 }
