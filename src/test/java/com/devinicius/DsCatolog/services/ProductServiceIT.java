@@ -73,7 +73,8 @@ public class ProductServiceIT {
 
     @Test
     public void findAllPagedShouldReturnSortedPageWhenSortByName() {
-        PageRequest pageRequest = PageRequest.of(0, 10, Sort.by("name"));
+        Integer page = 0, size = 10;
+        PageRequest pageRequest = PageRequest.of(page, size, Sort.by("name"));
 
         Page<ProductDTO> result = productService.findAllPaged(pageRequest);
 
